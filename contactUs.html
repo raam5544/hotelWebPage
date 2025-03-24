@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="logoParent">
+            <img id='logo' src="hotelLogo.jpg" alt="HotelLogo">
+            <h3>The Grand Hotel</h3>
+        </div>
+        <nav class="navBar">
+            <a href="home.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="contactUs.html">Contact Us</a>
+        </nav>
+    </header>
+    <main class="contactMain">
+        <div>
+            <h1>Contact Us</h1>
+            <p>Name :- The Grand Hotel</p>
+            <p>Address :- No. 45, Beach Road, <br>Dehiwela</p>
+            <p>Phone :- 011-1234567</p>
+        </div>
+    <form method="POST" action="form.php" style="display: flex; flex-direction: column; align-items: center;">
+        <h1 style="text-align: center;">Send Your Inquiry</h1>
+        <div class="formDiv">
+            <label for="fname">Name*</label >
+            <input type="text" name="fname" required>
+        </div>
+        <div class="formDiv">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" >
+        </div>
+        <div class="formDiv">
+            <label for="contNum">Contact Number</label>
+            <input type="phone" name="contNum" >
+        </div>
+
+        <div class="formDiv">
+            <label for="subject" >Subject</label>
+            <input type="text" name="subject">
+        </div>
+        <div class="formDiv">
+            <label for="message" >Message</label>
+            <textarea id="message" name="message" cols="30" rows="5"></textarea>
+        </div>
+        
+        <div class="formDiv">
+            <label>Customer Type*</label>
+            <div >
+                    <input type="radio" name="customerType" id="newCustomer" >
+                    <label for="newCustomer" style="width: 120px; text-align: end;">New Customer</label>
+                    <input type="radio" name="customerType" id="oldCustomer" >
+                    <label for="oldCustomer" style="width: 100px; text-align: end;">Old Customer</label>
+            </div>
+        </div>
+        <div style="padding-top: 20px;">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.535002719917!2d79.86132582322155!3d6.84234798984219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25b1082a57453%3A0x24592ddc71ce2601!2s45%20Beach%20Rd%2C%20Dehiwala-Mount%20Lavinia!5e0!3m2!1sen!2slk!4v1742806896418!5m2!1sen!2slk" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</main> 
+    <footer class="footer">
+        <div class="footerContent">
+            <div class="contInf">
+                <h4>Contact Information</h4>
+                <ul>
+                    <li>Phone: 1234567890</li>
+                    <li>Email:
+                        <a href=>thegrand@gmail.com</a>
+                    </li>
+                    <li>Address: 123, xyz street, abc city</li>
+            </div>
+            <div class="socialMed">
+                <h4>Connect With Us</h4>
+                <div>
+                <a><img src="facebook.png" class="socialIcon"/></a>
+                <a><img src="instagram.png" class="socialIcon" src=""/></a>
+                <a><img src="twitter.png" class="socialIcon" src=""/></a>
+            </div>
+            </div>
+            <div class="contact">
+                <h4><a style="text-decoration: none; color: black;" href="embedContact.html" target="contactUs">Click Here to Contact Us</a></h4>
+                <iframe class="iframe" name="contactUs">
+                    <form action="">
+                        <input type="text" placeholder="Name">hello
+                        <input type="email" placeholder="Email">
+                        <textarea placeholder="Message"></textarea>
+                        <button>Submit</button>
+                    </form>
+                </iframe>
+            </div>
+            <div class="subscribe">
+                <h4>Subscribe to News Letter</h4>
+                <form action="" style="display: flex; flex-direction: column; justify-content: space-between;" >
+                    <input type="email" placeholder="Email" style="margin-bottom: 10px;">
+                    <button>Subscribe</button>
+            </div>
+        </div>
+        <p>&copy; 2025 The Grand Hotel</p>
+    </footer>
+
+</body>
+</html>

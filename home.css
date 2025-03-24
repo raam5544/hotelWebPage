@@ -283,3 +283,24 @@ h1{
     z-index: 500;
     font-weight: 600;
 }
+
+.formDiv{
+    display: flex;
+    flex-direction: row;
+    /* border: solid red; */
+    width: 500px;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+label
+{
+    width: 200px;
+    display: inline-block;
+}
+
+.contactMain{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
