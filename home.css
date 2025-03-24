@@ -6,12 +6,27 @@
     margin-left: 50px;
 }
 
+.logoParent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+main{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    height: 2vh;
+}
+
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: aqua;
+    background-color: 	#ffbf00;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -120,16 +135,22 @@ section{
         align-items: center;
   }
 
+.gallery{
+    margin: 30px 30px;
+}
+
 .galleryImg:hover{
     transform: scale(2);
+    cursor: pointer;;
 }
 
 .navBar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     width: auto;
+    height: auto;
 }
 
 .navBar a{
@@ -138,21 +159,97 @@ section{
     font-size: 1.1rem;
     font-weight: bold;
     margin: 0 10px;
-    border: solid 1px rebeccapurple;
-    background-color: lightgray;
     border-radius: 20px;
     padding: 5px;
+    background-color: whitesmoke;
+    width: 100px;
+    text-align: center;
+}
+
+.navBar a:hover{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    border-radius: solid 1px black;
+    background-color: blanchedalmond;
 }
 
 
 a :hover{
-    color: red;
-    background-color: white;
-    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: blanchedalmond;
 }
 
 h1{
     margin-top: 20px;
     margin-bottom: 10px;
     text-align: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: 	#ffbf00;
+    height: fit-content;
+}
+
+.footerContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;    
+    padding: 5px;
+    width: 90%;
+}
+
+.contInf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: azure; */
+}
+
+.contInf ul{
+    padding-left: 15px;
+}
+
+.socialMed{
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    /* background-color: azure; */
+}
+
+.socialMed ul{
+    padding-left: 15px;
+}
+
+.socialIcon{
+    height: 40px;
+    width: 40px;
+}
+
+.iframe{
+    width: 200px;
+    height: 300px;
+    border: none;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: azure;     */
+    height: 150px;
+}
+
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* x     */
+    height: 150px;
 }

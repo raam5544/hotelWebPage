@@ -8,9 +8,12 @@
 </head>
 <body>
     <header>
-        <img id='logo' src="hotelLogo.jpg" alt="HotelLogo">
-        <h3>The Grand Hotel</h3>
+        <div class="logoParent">
+            <img id='logo' src="hotelLogo.jpg" alt="HotelLogo">
+            <h3>The Grand Hotel</h3>
+        </div>
         <nav class="navBar">
+            <a href="home.html">Home</a>
             <a href="aboutUs.html">About Us</a>
             <a href="facilities.html">Facilities</a>
             <a href="contactUs.html">Contact Us</a>
@@ -58,7 +61,7 @@
     </section>
     <h1>Gallery</h1>
     <section>
-        <div>
+        <div class="gallery">
             <img class="galleryImg" src="gall1.jpg" alt="Room1">
             <img class="galleryImg" src="gall2.jpg" alt="Room2">
             <img class="galleryImg" src="gall3.jpg" alt="Room1">
@@ -69,14 +72,44 @@
             <img class="galleryImg" src="gall4.jpg" alt="Room2">
         </div>
     </section>
-    <footer>
-        <div>
-            <div class="contInf">Contact Info</div>
-            <div class="socialMed">Social Media</div>
-            <div class="contact">Contact Form</div>
-            <div class="subscribe">Subscribe to News Letter</div>
+    <footer class="footer">
+        <div class="footerContent">
+            <div class="contInf">
+                <h4>Contact Information</h4>
+                <ul>
+                    <li>Phone: 1234567890</li>
+                    <li>Email:
+                        <a href=>thegrand@gmail.com</a>
+                    </li>
+                    <li>Address: 123, xyz street, abc city</li>
+            </div>
+            <div class="socialMed">
+                <h4>Connect With Us</h4>
+                <div>
+                <a><img src="facebook.png" class="socialIcon"/></a>
+                <a><img src="instagram.png" class="socialIcon" src=""/></a>
+                <a><img src="twitter.png" class="socialIcon" src=""/></a>
+            </div>
+            </div>
+            <div class="contact">
+                <h4><a style="text-decoration: none; color: black;" href="embedContact.html" target="contactUs">Click Here to Contact Us</a></h4>
+                <iframe class="iframe" name="contactUs">
+                    <form action="">
+                        <input type="text" placeholder="Name">hello
+                        <input type="email" placeholder="Email">
+                        <textarea placeholder="Message"></textarea>
+                        <button>Submit</button>
+                    </form>
+                </iframe>
+            </div>
+            <div class="subscribe">
+                <h4>Subscribe to News Letter</h4>
+                <form action="" style="display: flex; flex-direction: column; justify-content: space-between;" >
+                    <input type="email" placeholder="Email" style="margin-bottom: 10px;">
+                    <button>Subscribe</button>
+            </div>
         </div>
-        <p>&copy; 2020 The Grand Hotel</p>
+        <p>&copy; 2025 The Grand Hotel</p>
     </footer>
 </body>
 </html>
